@@ -1,2 +1,2 @@
-# ShoppingWebsite
+# Recipe Shopping Website
 Recipes
