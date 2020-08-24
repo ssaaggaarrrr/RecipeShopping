@@ -1,0 +1,31 @@
+<app-header (featureSelected)="selectedFeature($event)"></app-header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- <input type="number" [(ngModel)]="add1">
+            <input type="number" [(ngModel)]="add2">
+            <p>{{ ConvertToInt(add1) + ConvertToInt(add2) }}</p>
+
+            <h3>Im in App - Component</h3>
+            <hr>
+            <app-servers></app-servers> -->
+            <!-- <label>Username</label>
+            <input type="text" class="form-control" (keyup)="onInput()" [(ngModel)]="serverName">
+            <p [innerText]="serverName"></p>
+            <button class="btn btn-primary" (click)="onClick()" [disabled]="disableButton">Reset server</button>
+            <button class="btn btn-danger" (click)="onClickAdd()">Add Server</button>
+            <app-servers></app-servers>
+
+            <button class="btn btn-primary" (click)="onClickDetails()">Display Details</button>
+            <p *ngIf="showDetails">Secret Password - Tuna</p>
+            <div *ngFor="let logItem of log" [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent' }"
+                 [ngClass]="{'white-cl' : logItem >= 5 }">{{ logItem }}</div> -->
+            <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+            <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list>
+        </div>
+    </div>
+</div>
+
+
+<!-- <h3>Im in the App Component</h3> -->

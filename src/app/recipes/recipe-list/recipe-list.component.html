@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success">New Recipe</button>
+    </div>
+
+</div>
+<p appHighlighterDirective>Custom Directive using @HostListener mousehover</p>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <app-recipe-items *ngFor="let recEl of recipes" [rec]="recEl" (recipeClicked)="onRecipeSelected(recEl)"></app-recipe-items>
+    </div>
+</div>
