@@ -12,6 +12,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingListEditComponent } from './shopping-list/shopping-listedit/shopping-listedit.component';
 import { HeaderComponent } from './header/header.component';
 import { HighlighterDirectiveDirective } from './shared/highlighter-directive.directive';
+import { DropdownDirectiveDirective } from './shared/dropdown-directive.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HighlighterDirectiveDirective } from './shared/highlighter-directive.di
     ShoppingListComponent,
     ShoppingListEditComponent,
     HeaderComponent,
-    HighlighterDirectiveDirective
+    HighlighterDirectiveDirective,
+    DropdownDirectiveDirective
   ],
   imports: [
     BrowserModule,
