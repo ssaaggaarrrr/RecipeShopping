@@ -25,11 +25,11 @@ addedIngredient(ingredient: Ingredient){
 }
 
 addIngredients(ingredient : Ingredient[]){
-  // this.ingredients.push(...ingredient);
-  // this.ingredientChanged.emit(this.ingredients.slice());
-  for(let ing of ingredient){
-    this.addedIngredient(ing);
-  }
+  this.ingredients.push(...ingredient);
+  this.ingredientChanged.emit(this.ingredients.slice());
+  // for(let ing of ingredient){
+  //   this.addedIngredient(ing);
+  // }
 
 }
 
