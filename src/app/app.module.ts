@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
+import {AppRoutingModule} from './app-routing.module';
 import {ServerComponent} from './server/server.component'
 import {ServersComponent} from './servers/servers.component';
 import { RecipesComponent } from './recipes/recipes.component';
@@ -13,6 +14,10 @@ import { ShoppingListEditComponent } from './shopping-list/shopping-listedit/sho
 import { HeaderComponent } from './header/header.component';
 import { HighlighterDirectiveDirective } from './shared/highlighter-directive.directive';
 import { DropdownDirectiveDirective } from './shared/dropdown-directive.directive';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+
+
 
 @NgModule({
   declarations: [
@@ -27,13 +32,18 @@ import { DropdownDirectiveDirective } from './shared/dropdown-directive.directiv
     ShoppingListEditComponent,
     HeaderComponent,
     HighlighterDirectiveDirective,
-    DropdownDirectiveDirective
+    DropdownDirectiveDirective,
+    RecipeStartComponent,
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+ }

@@ -26,4 +26,8 @@ this.shoppingService.ingredientChanged.subscribe((ingredient : Ingredient[]) =>{
 // }
 
 
+editIngredient(index : number){
+this.shoppingService.startedEditing.next(index);
+}
+
 }

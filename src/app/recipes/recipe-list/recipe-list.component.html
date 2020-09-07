@@ -1,13 +1,13 @@
 <div class="row">
     <div class="col-xs-12">
-        <button class="btn btn-success">New Recipe</button>
+        <button (click)="toCreate()" class="btn btn-success">New Recipe</button>
     </div>
 
 </div>
-<p appHighlighterDirective>Custom Directive using @HostListener mousehover</p>
+<!-- <p appHighlighterDirective>Custom Directive using @HostListener mousehover</p> -->
 <hr>
 <div class="row">
     <div class="col-xs-12">
-        <app-recipe-items *ngFor="let recEl of recipes" [rec]="recEl"></app-recipe-items>
+        <app-recipe-items *ngFor="let recEl of recipes; let i = index" [rec]="recEl" [index]="i"></app-recipe-items>
     </div>
 </div>

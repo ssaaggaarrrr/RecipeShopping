@@ -30,4 +30,13 @@ addIngredientsToShopL(ingredient : Ingredient[]){
 this.shoppingService.addIngredients(ingredient);
 }
 
+
+getRecipe(index: any){
+   return this.recipes[index];
+}
+
+
+
+
+
 }

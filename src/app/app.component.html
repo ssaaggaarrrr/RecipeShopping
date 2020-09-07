@@ -21,8 +21,9 @@
             <p *ngIf="showDetails">Secret Password - Tuna</p>
             <div *ngFor="let logItem of log" [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent' }"
                  [ngClass]="{'white-cl' : logItem >= 5 }">{{ logItem }}</div> -->
-            <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
-            <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list>
+            <!-- <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+            <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list> -->
+            <router-outlet></router-outlet>
         </div>
     </div>
 </div>
